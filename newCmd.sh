@@ -11,7 +11,7 @@ true > infile
 input="file1.out"
 while IFS= read -r line
 do
-	echo "$line" | awk -F ' ' '{if($5=="ID:972") {print($5);};}' | tr ',' '\n' | tee -a infile 
+	echo "$line" | awk -F ' ' '{if($5=="ID:1") {print($5);};}' | tr ',' '\n' | tee -a infile 
 done < "$input"
 
 input="infile"
