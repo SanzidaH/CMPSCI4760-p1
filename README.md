@@ -35,11 +35,22 @@ Redrawn Figure 3.2 [filename task2.PNG in git repo] by filling in actual PIDs of
 $ ./simplechain 4
 ```
 
-### Task 3
+#### Task 3
 > Experiment with different values for the number of processes up to a maximum of 100 processes. Observe the fraction
 that are adopted by init.
 
-To observe fraction that are adopted by init, I wrote shell script newCmd.sh. It shows the fraction that are adopted by init in terminal. It also produces a file named file1 to showing all the processes and file named showing the processes that adopted by init. We need update the "pno" variable within the shell script for different number of processes.
+To observe fraction that are adopted by init, I wrote a shell script newCmd.sh. It shows the fraction that are adopted by init in terminal. It also produces a file named file1 to showing all the processes and file named infile showing the processes that adopted by init. We need update the "pno" variable within the shell script for different number of processes.
 
+Observation: Fraction is getting higher with the increasing number of processes.:wq
+```
+./newCmd.sh
+```
+
+#### Task 4
+> Place sleep(10); directly before the final fprintf statement in the code. Make the previous observation again.
+
+Can be found in git commit history with messege "Task 4 added"
+
+Observation: Fraction became lower than before. Also, it's getting lower with the increasing number of processes. 
 
 
