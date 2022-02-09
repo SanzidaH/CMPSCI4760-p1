@@ -36,14 +36,13 @@ $ ./simplechain 4
 ```
 
 #### Task 3
-> Experiment with different values for the number of processes up to a maximum of 100 processes. Observe the fraction
-that are adopted by init.
+> Experiment with different values for the number of processes up to a maximum of 100 processes. Observe the fraction that are adopted by init.
 
 To observe fraction that are adopted by init, I wrote a shell script newCmd.sh. It shows the fraction that are adopted by init in terminal. It also produces a file named file1 to showing all the processes and file named infile showing the processes that adopted by init. We need update the "pno" variable within the shell script for different number of processes.
 
-Observation: Fraction is getting higher with the increasing number of processes.:wq
+Observation: Fraction is getting higher with the increasing number of processes.
 ```
-./newCmd.sh
+$ ./newCmd.sh
 ```
 
 #### Task 4
@@ -52,5 +51,9 @@ Observation: Fraction is getting higher with the increasing number of processes.
 Can be found in git commit history with messege "Task 4 added"
 
 Observation: Fraction became lower than before. Also, it's getting lower with the increasing number of processes. 
+
+#### Task 5
+> Put a loop around the final fprintf in your code. Have the loop execute k times. Put sleep(m); inside this loop just before the fprintf statement. Pass k and m using command line options. Run the program for several values of n, k, and m. Observe the results.
+
 
 
