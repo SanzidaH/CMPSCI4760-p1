@@ -4,7 +4,7 @@
 
 CC = gcc
 CFLAGS = -g
-TARGET1 = simplechain
+TARGET1 = chain
 OBJS1 = simplechain.c
 
 .SUFFIXES: .c .o

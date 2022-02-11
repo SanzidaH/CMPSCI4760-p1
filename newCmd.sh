@@ -1,10 +1,14 @@
 #!/bin/bash
 
 #touch infile
-pno="30"
+pno="100"
+st="2"
+iter="2"
+char="2"
+
 echo "Number of Process: $pno"
 make
-./simplechain $pno >file1.out 2>file1.out
+./simplechain -s $st -p $pno -i $iter -c $char >file1.out 2>file1.out
 export i=0
 true > infile
 
